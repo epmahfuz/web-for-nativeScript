@@ -1,1 +1,4 @@
-<button mat-raised-button color="primary" (click)="initiateScannerEvent()" >Click Here</button>
+<button [disabled]="!clicked" mat-raised-button color="primary" (click)="initiateScannerEvent()" >Click Here</button>
+<button [disabled]="clicked" mat-raised-button color="primary" (click)="initiateScannerEvent()" >Click Here</button>
+{{clicked}}
+{{title}}
